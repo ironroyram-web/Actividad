@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cocina Fácil</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
+      background-size: cover;
+      background-position: center;
+      backdrop-filter: blur(3px);
+      color: #fff;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 40px;
+      color: #a8e6a3;
+      text-shadow: 2px 2px #2e5d2f;
+    }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .soup-button {
+      background-color: #66bb6a;
+      color: white;
+      border: none;
+      padding: 20px 30px;
+      font-size: 1.2em;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      text-decoration: none;
+    }
+
+    .soup-button:hover {
+      background-color: #558b2f;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .soup-button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>¡Bienvenido a Cocina Fácil!</h1>
+    <div class="button-container">
+      <a href="crepas.png" class="soup-button" target="_blank">Crepas</a>
+      <a href="pizza.png" class="soup-button" target="_blank">Pizza</a>
+      <a href="sopadecebolla.png" class="soup-button" target="_blank">Sopa de cebolla</a>
+      <a href="cremadechilespoblanos.png" class="soup-button" target="_blank">Crema de chiles poblanos</a>
+    </div>
+  </div>
+</body>
+</html>
+
